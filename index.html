@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,30 +8,40 @@
 	<title>Test Fidesio</title>
 </head>
 <body>
-	<div class="content">
+	<main class="content">
 		<div class="AccordionWrapper" id="accordion">
-			<div class="AccordionItem" aria-level="1" aria-hidden="false">
+			<div class="AccordionItem" aria-expanded="true" role="combobox">
 				<div class="AccordionHeader">
-					<h2>Conseil</h2><img src="img/arrow_nw.svg" alt="close" class="close" onClick="closeAccordionItem(1)">
-					<h3>Vous accompagner <br />dans la démarche sécurité</h3>
+					<h2>Conseil</h2><img src="img/arrow_nw.svg" alt="close" class="close" onClick="closeAccordionItem(0)">
+					<h3>Vous accompagner <br>dans la démarche sécurité</h3>
 
 				</div>
 				<div class="AccordionContent">
 					<p>La maitrise des risques numériques passe par la mise œuvre d’une démarche décurité à la fois organisée et formalisée.</p>
 				</div>
-				<div class="AccordionFooter" onClick="openAccordionItem(1)">1</div>
+				<div class="AccordionFooter" onClick="openAccordionItem(0)">1</div>
 			</div>
-			<div class="AccordionItem" aria-level="2" aria-hidden="true">
+			<div class="AccordionItem" aria-expanded="false" role="combobox">
 				<div class="AccordionHeader">
-					<h2>Conseil</h2><img src="img/arrow_nw.svg" alt="close" class="close" onClick="closeAccordionItem(2)">
-					<h3>Vous accompagner <br />dans la démarche sécurité</h3>
+					<h2>Conseil</h2><img src="img/arrow_nw.svg" alt="close" class="close" onClick="closeAccordionItem(1)">
+					<h3>Vous accompagner <br>dans la démarche sécurité</h3>
 				</div>
 				<div class="AccordionContent">
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras suscipit neque ac metus ultrices, sit amet maximus nisl tincidunt. Pellentesque.</p>
 				</div>
-				<div class="AccordionFooter" onClick="openAccordionItem(2)">2</div>
+				<div class="AccordionFooter" onClick="openAccordionItem(1)">2</div>
 			</div>
-			<div class="AccordionItem" aria-level="3" aria-hidden="true">
+			<div class="AccordionItem" aria-expanded="false" role="combobox">
+				<div class="AccordionHeader">
+					<h2>Conseil</h2><img src="img/arrow_nw.svg" alt="close" class="close" onClick="closeAccordionItem(2)">
+					<h3>Lorem ipsum dolor sit amet, consectetur adipiscing.</h3>
+				</div>
+				<div class="AccordionContent">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras suscipit neque ac metus ultrices, sit amet maximus nisl tincidunt. Pellentesque.</p>
+				</div>
+				<div class="AccordionFooter" onClick="openAccordionItem(2)">3</div>
+			</div>
+			<div class="AccordionItem" aria-expanded="false" role="combobox">
 				<div class="AccordionHeader">
 					<h2>Conseil</h2><img src="img/arrow_nw.svg" alt="close" class="close" onClick="closeAccordionItem(3)">
 					<h3>Lorem ipsum dolor sit amet, consectetur adipiscing.</h3>
@@ -39,17 +49,7 @@
 				<div class="AccordionContent">
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras suscipit neque ac metus ultrices, sit amet maximus nisl tincidunt. Pellentesque.</p>
 				</div>
-				<div class="AccordionFooter" onClick="openAccordionItem(3)">3</div>
-			</div>
-			<div class="AccordionItem" aria-level="4" aria-hidden="true">
-				<div class="AccordionHeader">
-					<h2>Conseil</h2><img src="img/arrow_nw.svg" alt="close" class="close" onClick="closeAccordionItem(4)">
-					<h3>Lorem ipsum dolor sit amet, consectetur adipiscing.</h3>
-				</div>
-				<div class="AccordionContent">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras suscipit neque ac metus ultrices, sit amet maximus nisl tincidunt. Pellentesque.</p>
-				</div>
-				<div class="AccordionFooter" onClick="openAccordionItem(4)">4</div>
+				<div class="AccordionFooter" onClick="openAccordionItem(3)">4</div>
 			</div>
 		</div>
 
@@ -61,7 +61,38 @@
 			<img src="img/allianz.svg" alt="Logo Allianz">
 			<img src="img/arcelor.svg" alt="Logo Arcelor">
 		</div>
-	</div>
+
+		<section class="articles">
+			<header>
+				Nos dernières publications
+			</header>
+			<div>
+				<article>
+					<a href="https://www.google.com">
+						<img src="img/emilie_pauline_bintia_linkedout.png" alt="Pauline, Bintia et Emilie">
+						<h1>Rencontre avec Pauline, <br>Bintia et Emilie</h1>
+						<span class="type">Audit</span><time datetime="2021-09-21">15 septembre 2021</time>
+					</a>
+				</article>
+				<article>
+					<a href="https://www.google.com">
+						<h1>Cyber Stress : une grande étude sur le stress des Responsables Cyber</h1>
+						<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam faucibus orci a quam venenatis laoreet non eu massa. Donec volutpat arcu pharetra, imperdiet nulla et, tempus massa.</h4>
+						<span class="type">Audit</span><time datetime="2021-09-21">15 septembre 2021</time>
+					</a>
+				</article>
+				<article>
+					<a href="https://www.google.com">
+						<img src="img/logo_capza.svg" alt="logo capza" >
+						<h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
+						<h4>Une opération inédite qui ouvre la voie à un nouveau modèle d’entreprise à impact sociétal...</h4>
+						<span class="type">Audit</span><time datetime="2021-09-21">17 juin 2021</time>
+					</a>
+				</article>
+			</div>
+			
+		</section>
+	</main>
 	<script type="text/javascript" src="home.js"></script>
 </body>
 </html>
