@@ -1,1 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+	
+	<title>Test Fidesio</title>
+</head>
+<body>
+	<div class="content">
+		<div class="AccordionWrapper" id="accordion">
+			<div class="AccordionItem" aria-level="1" aria-hidden="false">
+				<div class="AccordionHeader">
+					<h2>Conseil</h2><img src="img/arrow_nw.svg" alt="close" class="close" onClick="closeAccordionItem(1)">
+					<h3>Vous accompagner <br />dans la démarche sécurité</h3>
 
+				</div>
+				<div class="AccordionContent">
+					<p>La maitrise des risques numériques passe par la mise œuvre d’une démarche décurité à la fois organisée et formalisée.</p>
+				</div>
+				<div class="AccordionFooter" onClick="openAccordionItem(1)">1</div>
+			</div>
+			<div class="AccordionItem" aria-level="2" aria-hidden="true">
+				<div class="AccordionHeader">
+					<h2>Conseil</h2><img src="img/arrow_nw.svg" alt="close" class="close" onClick="closeAccordionItem(2)">
+					<h3>Vous accompagner <br />dans la démarche sécurité</h3>
+				</div>
+				<div class="AccordionContent">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras suscipit neque ac metus ultrices, sit amet maximus nisl tincidunt. Pellentesque.</p>
+				</div>
+				<div class="AccordionFooter" onClick="openAccordionItem(2)">2</div>
+			</div>
+			<div class="AccordionItem" aria-level="3" aria-hidden="true">
+				<div class="AccordionHeader">
+					<h2>Conseil</h2><img src="img/arrow_nw.svg" alt="close" class="close" onClick="closeAccordionItem(3)">
+					<h3>Lorem ipsum dolor sit amet, consectetur adipiscing.</h3>
+				</div>
+				<div class="AccordionContent">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras suscipit neque ac metus ultrices, sit amet maximus nisl tincidunt. Pellentesque.</p>
+				</div>
+				<div class="AccordionFooter" onClick="openAccordionItem(3)">3</div>
+			</div>
+			<div class="AccordionItem" aria-level="4" aria-hidden="true">
+				<div class="AccordionHeader">
+					<h2>Conseil</h2><img src="img/arrow_nw.svg" alt="close" class="close" onClick="closeAccordionItem(4)">
+					<h3>Lorem ipsum dolor sit amet, consectetur adipiscing.</h3>
+				</div>
+				<div class="AccordionContent">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras suscipit neque ac metus ultrices, sit amet maximus nisl tincidunt. Pellentesque.</p>
+				</div>
+				<div class="AccordionFooter" onClick="openAccordionItem(4)">4</div>
+			</div>
+		</div>
+
+		<div class="banner">
+			<img src="img/ca.svg" alt="Logo CA">
+			<img src="img/allianz.svg" alt="Logo Allianz">
+			<img src="img/arcelor.svg" alt="Logo Arcelor">
+			<img src="img/ca.svg" alt="Logo CA">
+			<img src="img/allianz.svg" alt="Logo Allianz">
+			<img src="img/arcelor.svg" alt="Logo Arcelor">
+		</div>
+	</div>
+	<script type="text/javascript" src="home.js"></script>
+</body>
+</html>

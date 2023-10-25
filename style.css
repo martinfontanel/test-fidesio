@@ -1,1 +1,100 @@
+@import url("font/roboto.css");
 
+* {
+	font-family: "Roboto";
+	font-weight: normal;
+	font-size: 16px;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	padding:2em;
+	background-color: #F5F4F2;
+}
+
+.content{
+	width: 1228px;
+	margin: 0 auto;
+}
+
+.AccordionItem {
+	border-radius: 0 0 10px 10px;
+	width: 100%;
+	color: #FFFFFF;
+	position: relative;
+	padding: 0 2.5em;
+}
+
+.AccordionItem>* { width: 100%; }
+.AccordionItem h2, .AccordionFooter { font-size:2.5em; }
+.AccordionItem h2 { padding-top:1em; }
+.AccordionFooter { padding:0 0 .4em 0; }
+.AccordionItem h3 {
+	font-size:1.5em;
+	margin:2em 0;
+}
+.AccordionHeader, .AccordionContent {width:33%;}
+
+.AccordionContent {
+	border-top: solid 1px rgba(196, 196, 196, .5);
+	padding: 1em 0;
+}
+
+.AccordionContent > p {
+	color:#CCEAFF;
+}
+
+.AccordionItem > *,
+.AccordionItem[aria-hidden="true"] > .AccordionFooter {
+	visibility: visible;
+  	opacity: 1;
+  	max-height: 500px;
+	transition: max-height 1s, visibility 1s, opacity 1s;
+}
+
+.AccordionItem[aria-hidden="true"] > * {
+	visibility: hidden;
+  	opacity: 0;
+  	max-height: 0;
+}
+.AccordionItem[aria-hidden="true"] > .AccordionFooter {
+	display: block;
+	cursor: pointer;
+}
+
+.AccordionItem[aria-level="1"] {
+	background-color: #1184D1;
+	border-radius: 10px 10px 10px 10px;
+	z-index: 4;
+}
+.AccordionItem[aria-level="2"] {
+	background-color: #0777C2;
+	z-index: 3;
+	margin-top: -10px;
+}
+.AccordionItem[aria-level="3"] {
+	background-color: #EF8451;
+	z-index: 2;
+	margin-top: -10px;
+}
+.AccordionItem[aria-level="4"] {
+	background-color: #EA6419;
+	z-index: 1;
+	margin-top: -10px;
+}
+.AccordionHeader>.close {
+	display: block;
+    position: absolute;
+    top: 2.5em;
+    right: 2.5em;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.banner{
+	display: flex;
+	margin: 3.5em 0;
+	justify-content: space-around;
+}
